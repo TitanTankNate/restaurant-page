@@ -1,4 +1,4 @@
-// Homepage Javascript
+// About page Javascript
 
 
 

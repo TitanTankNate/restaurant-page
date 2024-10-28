@@ -1,4 +1,4 @@
-// Homepage Javascript
+// Menu page Javascript
 
 
 

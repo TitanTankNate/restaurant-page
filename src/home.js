@@ -66,7 +66,7 @@ function createButtonElement(elementClass, elementId, elementTextContent, elemen
 
 // FUNCTION:    createImageElement()
 // DESCRIPTION: <>
-function createImageElement(imgImportVar, elementClass, elementID, elementAltText, elementHeight, elementWidth, elementParentSelector) {
+function createImageElement(imgImportVar, elementClass, elementID, elementAltText, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
     
@@ -76,11 +76,7 @@ function createImageElement(imgImportVar, elementClass, elementID, elementAltTex
     elemToCreate.classList.add(elementClass);
     elemToCreate.id = elementID;
     elemToCreate.alt = elementAltText;
-    
-    // Apply element CSS
-    elemToCreate.style.width = elementWidth;
-    elemToCreate.style.height = elementHeight;
-    
+        
     // Append child element to parent
     parentElement.appendChild(elemToCreate);
 };
@@ -104,7 +100,7 @@ function createHomePage() {
         
         // Image container
         createDivElement("image-container-generic",".content-container-generic");
-            createImageElement(restaurantInteriorImage,"image-medium-square","image-medium-square-1","Sushi Tomi Restaurant Interior","400px","auto",".image-container-generic");
+            createImageElement(restaurantInteriorImage,"image-medium-square","image-medium-square-1","Sushi Tomi Restaurant Interior",".image-container-generic");
     
     // "Hero" container, full-width
     createDivElement("content-container-hero","#content");
