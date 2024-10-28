@@ -5,7 +5,6 @@
 
 
 // IMPORTS ------------------------------------------------------------
-import restaurantInteriorImage from "./images/sushitomi_restaurant_interior.jpg"
 
 
 
@@ -89,27 +88,10 @@ function createImageElement(imgImportVar, elementClass, elementID, elementAltTex
 
 // FUNCTION:    createDynamicDOM()
 // DESCRIPTION: <>
-function createHomePage() {
+function createAboutPage() {
     // NOTE: This function is arranged in DOM tree hierarchy, for 
     // readability
 
-    // "Title" container, full-width
-    createDivElement("content-container-generic","#content");
-        // Text container
-        createDivElement("text-container-generic",".content-container-generic");
-            createTextElement("h1","generic-h1","寿し富",".text-container-generic");
-            createTextElement("h2","generic-h2","Sushi Tomi",".text-container-generic");
-            createTextElement("p","subtitle-p","Authentic | Local | Oishii",".text-container-generic");
-            createButtonElement("button-cta-medium","button-cta-medium-1","Discover Oishii",".text-container-generic");
-        
-        // Image container
-        createDivElement("image-container-generic",".content-container-generic");
-            createImageElement(restaurantInteriorImage,"image-medium-square","image-medium-square-1","Sushi Tomi Restaurant Interior","400px","auto",".image-container-generic");
-    
-    // "Hero" container, full-width
-    createDivElement("content-container-hero","#content");
-        createTextElement("h2","hero-header-h2","From Central Japan to Central FLorida",".content-container-hero");
-        createTextElement("p","hero-body-p","Sushi Tomi is Japanese food, prepared the Japanese wa, and served with Japanese \"Omotenashi\" (hospitality) that you can't find anywhere else in Central Florida.",".content-container-hero");
 
 };
 
@@ -118,4 +100,4 @@ function createHomePage() {
 
 
 // EXPORTS ------------------------------------------------------------
-export {createHomePage};
+export {createAboutPage};
