@@ -5,8 +5,9 @@
 
 
 // IMPORTS ------------------------------------------------------------
-
-
+import seaBassDish from "./images/seabass_dish.png";
+import beefGyuudonDish from "./images/beef_gyuudon_dish.png";
+import tunaChirashiDish from "./images/tuna_chirashi_dish.png";
 
 
 
@@ -92,6 +93,27 @@ function createMenuPage() {
     // NOTE: This function is arranged in DOM tree hierarchy, for 
     // readability
 
+    // "Title" container, full-width
+    createDivElement("content-container-generic", "#content");
+        createTextElement("h2","generic-h2","Osusume | The Chef Recommends", ".content-container-generic");
+        
+        // "Menu" card container
+        createDivElement("menu-card-container", ".content-container-generic");
+            // Menu item card 1
+            createDivElement("menu-card-item-1",".menu-card-container");
+            createImageElement(seaBassDish,"menu-picture-small","menu-picture-1","Chilean Sea Bass","150px", "auto",".menu-card-item-1");
+                createTextElement("h3","generic-h3","Miso Chilean Sea Bass",".menu-card-item-1");
+                createTextElement("p","generic-p","Savor the delicately salty and wonderfully balanced flavor of Chilean Sea Bass, grilled over open flame, and glazed in a sweet miso sauce.",".menu-card-item-1");
+            // Menu item card 2 
+            createDivElement("menu-card-item-2",".menu-card-container");
+            createImageElement(beefGyuudonDish,"menu-picture-small","menu-picture-2","Beef Gyuudon","150px", "auto",".menu-card-item-2");
+                createTextElement("h3","generic-h3","Beef Gyuudon",".menu-card-item-2");
+                createTextElement("p","generic-p","Live the salaryman life and kick the post-work party hangover blues with a filling and flavorful beef-and-onion bowl, Sukiyaki-style, heaped on a generous bowl of rice. Now you're ready for round two!",".menu-card-item-2");
+            // Menu item card 3
+            createDivElement("menu-card-item-3",".menu-card-container");
+            createImageElement(seaBassDish,"menu-picture-small","menu-picture-1","Chilean Sea Bass","150px", "auto",".menu-card-item-1");
+                createTextElement("h3","generic-h3","Miso Chilean Sea Bass",".menu-card-item-1");
+                createTextElement("p","generic-p","Savor the delicately salty and wonderfully balanced flavor of Chilean Sea Bass, grilled over open flame, and glazed in a sweet miso sauce.",".menu-card-item-1");
     
 };
 

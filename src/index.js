@@ -5,7 +5,7 @@ import { createAboutPage } from "./about.js";
 import { createMenuPage } from "./menu.js";
 
 console.log("index.js running.");
-createAboutPage();
+createMenuPage();
 
 function clearDOM() {
     const contentToDelete = document.querySelector("#content");
