@@ -108,10 +108,10 @@ function createHomePage() {
     
     // "Hero" container, full-width
     createDivElement("content-container-hero","#content");
-        createTextElement("h2","hero-header-h2","From Central Japan to Central FLorida",".content-container-hero");
-        createTextElement("p","hero-body-p","Sushi Tomi is Japanese food, prepared the Japanese wa, and served with Japanese \"Omotenashi\" (hospitality) that you can't find anywhere else in Central Florida.",".content-container-hero");
+        createTextElement("h2","hero-header-h2","From Central Japan to Central Florida",".content-container-hero");
+        createTextElement("p","hero-body-p","Sushi Tomi is Japanese food, prepared the Japanese way, and served with Japanese \"Omotenashi\" (hospitality) that you can't find anywhere else in Central Florida.",".content-container-hero");
 
-};
+    };
 
 
 
