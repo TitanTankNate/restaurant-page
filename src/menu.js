@@ -13,7 +13,8 @@ import tunaChirashiDish from "./images/tuna_chirashi_dish.png";
 
 // METHODS ------------------------------------------------------------
 // FUNCTION:    createDivElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a class specification (singular) 
+// and a parent Element, and creates a new HTML <div> element.
 function createDivElement(elementClass,elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -30,7 +31,9 @@ function createDivElement(elementClass,elementParentSelector) {
 
 
 // FUNCTION:    createTextElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a type of text (such as h1, h2, 
+// or p), a class specification (singular), the text content itself, 
+// and a parent element, and creates a new HTML <text type> element.
 function createTextElement(elementType, elementClass, elementTextContent, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -47,7 +50,10 @@ function createTextElement(elementType, elementClass, elementTextContent, elemen
 
 
 // FUNCTION:    createButtonElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a class specification 
+// (singular), an assignable element ID, text content for the button 
+// capion, and a parent element, and creates a new HTML <button> 
+// element. 
 function createButtonElement(elementClass, elementId, elementTextContent, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -65,7 +71,10 @@ function createButtonElement(elementClass, elementId, elementTextContent, elemen
 
 
 // FUNCTION:    createImageElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts the variable name for an 
+// imported image path, a class specification (singular), 
+// assignable element ID, alternate text for the image, and a 
+// parent element, and creates a new HTML <img> element.
 function createImageElement(imgImportVar, elementClass, elementID, elementAltText, elementHeight, elementWidth, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -88,17 +97,19 @@ function createImageElement(imgImportVar, elementClass, elementID, elementAltTex
 
 
 // FUNCTION:    createDynamicDOM()
-// DESCRIPTION: <>
+// DESCRIPTION: This function lays out the dynamic DOM tree, with the 
+// intent that this function will be called when the page/tab loads or 
+// is reset/refresh.
 function createMenuPage() {
     // NOTE: This function is arranged in DOM tree hierarchy, for 
     // readability
 
     // "Title" container, full-width
-    createDivElement("content-container-generic", "#content");
-        createTextElement("h2","generic-h2","Osusume | The Chef Recommends", ".content-container-generic");
+    createDivElement("content-container-menu", "#content");
+        createTextElement("h2","generic-h2","Osusume | The Chef Recommends", ".content-container-menu");
         
         // "Menu" card container
-        createDivElement("menu-card-container", ".content-container-generic");
+        createDivElement("menu-card-container", ".content-container-menu");
             // Menu item card 1
             createDivElement("menu-card-item-1",".menu-card-container");
             createImageElement(seaBassDish,"menu-picture-small","menu-picture-1","Chilean Sea Bass","150px", "auto",".menu-card-item-1");
@@ -111,9 +122,9 @@ function createMenuPage() {
                 createTextElement("p","generic-p","Live the salaryman life and kick the post-work party hangover blues with a filling and flavorful beef-and-onion bowl, Sukiyaki-style, heaped on a generous bowl of rice. Now you're ready for round two!",".menu-card-item-2");
             // Menu item card 3
             createDivElement("menu-card-item-3",".menu-card-container");
-            createImageElement(seaBassDish,"menu-picture-small","menu-picture-1","Chilean Sea Bass","150px", "auto",".menu-card-item-1");
-                createTextElement("h3","generic-h3","Miso Chilean Sea Bass",".menu-card-item-1");
-                createTextElement("p","generic-p","Savor the delicately salty and wonderfully balanced flavor of Chilean Sea Bass, grilled over open flame, and glazed in a sweet miso sauce.",".menu-card-item-1");
+            createImageElement(tunaChirashiDish,"menu-picture-small","menu-picture-1","Chilean Sea Bass","150px", "auto",".menu-card-item-3");
+                createTextElement("h3","generic-h3","Tuna Chirashi",".menu-card-item-3");
+                createTextElement("p","generic-p","From the simplicity and humility of Japan's seaside homes comes a simple, yet flavorful combination of tender cuts of fresh, fatty tuna sashimi, paired with Obaasan's (grandma's) vinegar rice. Umai (amazing)!",".menu-card-item-3");
     
 };
 

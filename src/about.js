@@ -12,7 +12,8 @@ import sushiPlateImage from "./images/sushi_plate.jpg";
 
 // METHODS ------------------------------------------------------------
 // FUNCTION:    createDivElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a class specification (singular) 
+// and a parent Element, and creates a new HTML <div> element.
 function createDivElement(elementClass,elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -29,7 +30,9 @@ function createDivElement(elementClass,elementParentSelector) {
 
 
 // FUNCTION:    createTextElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a type of text (such as h1, h2, 
+// or p), a class specification (singular), the text content itself, 
+// and a parent element, and creates a new HTML <text type> element.
 function createTextElement(elementType, elementClass, elementTextContent, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -46,7 +49,10 @@ function createTextElement(elementType, elementClass, elementTextContent, elemen
 
 
 // FUNCTION:    createButtonElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts a class specification 
+// (singular), an assignable element ID, text content for the button 
+// capion, and a parent element, and creates a new HTML <button> 
+// element. 
 function createButtonElement(elementClass, elementId, elementTextContent, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -64,7 +70,10 @@ function createButtonElement(elementClass, elementId, elementTextContent, elemen
 
 
 // FUNCTION:    createImageElement()
-// DESCRIPTION: <>
+// DESCRIPTION: This function accepts the variable name for an 
+// imported image path, a class specification (singular), 
+// assignable element ID, alternate text for the image, and a 
+// parent element, and creates a new HTML <img> element.
 function createImageElement(imgImportVar, elementClass, elementID, elementAltText, elementHeight, elementWidth, elementParentSelector) {
     // Select parent element
     const parentElement = document.querySelector(elementParentSelector);
@@ -87,7 +96,9 @@ function createImageElement(imgImportVar, elementClass, elementID, elementAltTex
 
 
 // FUNCTION:    createDynamicDOM()
-// DESCRIPTION: <>
+// DESCRIPTION: This function lays out the dynamic DOM tree, with the 
+// intent that this function will be called when the page/tab loads or 
+// is reset/refresh.
 function createAboutPage() {
     // NOTE: This function is arranged in DOM tree hierarchy, for 
     // readability

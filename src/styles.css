@@ -2,229 +2,263 @@
 /* All fonts from fonts.google.com */
 
 .noto-serif-jp-standard {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .noto-serif-jp-bold {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .noto-serif-jp-extrabold {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-
-  .noto-serif-jp-light {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .noto-serif-jp-italic {
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  /* CSS RESET AND NORMALIZATION   CSS CSS CSS CSS CSS CSS CSS CSS CSS  */
-  /* Remove padding */
-  body, ul, p, a {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-  }
-  
-  /* Remove hyperlink text decoration */
-  a {
-      text-decoration: none;
-      color: inherit;
-  }
-  
-  /* Remove bullets from list items */
-  ul {
-      list-style-type: none;
-  }
-  
-  
-  
-  
-  
-  /* THEME TH TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH   */
-  
-  :root {
-      /* Colors */
-      --background-color: #F2E9E4;
-      --background-color-darker: #E7D6CD;
-      --accent-color: #4A4E69;
-      --accent-highlight-color: #9A8C98;
-      --valid-color: #9A8C98;
-      --font-default-color: #22223B;
-      --font-alternative-color: #C9ADA7;
-  }
-  
-  body {
-      /* Font and color declarations */
-      background-color: var(--background-color, darkgrey);
-  }
-  
-  h1, h2, h3, h4, h5, a, p, input {
-      /* Font and color declarations */
-      font-family: "Noto Serif JP", serif;
-      color: var(--font-default-color, white);
-  
-      /* CBPM */
-      padding: 0;
-      margin: 0;
-  }
-  
-  p {
-      /* Font and color declarations */
-  }
-  
-  a {
-      /* Font and color declarations */
-      color: var(--font-alternative-color, white);
-  }
-
-  button {
-    /* Font and color declarations */
-    font-family: "Noto Serif JP", serif;
-  }
-
-
-
-  /* HEADER H   H   H   H   H   H   H   H   H   H   H   H   H   H   H*/
-  .header-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    padding: 4px 12px;
-  }
-
-  .nav-links {
-    padding: 4px 12px;
-  }
-
-  h1 {
-    font-size: 3rem;
-    border-bottom: 2px solid var(--accent-highlight-color);
-  }
-
-
-
-  /* CONTENT CONTAINER CC   CC  CC  CC  CC  CC  CC  CC  CC  CC  CC   */
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-container-generic {
-    display: flex;
-    justify-content: space-between;
-    gap: 5vw;
-
-    padding: 12px 0px;
-    margin: 0px max(0.5vw, 10vw);
-  }
-
-  /* Text container */
-  .text-container-generic {
-
-  }
-
-  .text-container-generic h1 {
-    font-size: max(2rem, 10vw);
-    text-shadow: 2px 2px 2px black;
-  }
-
-  .text-container-generic h2 {
-    font-size: max(1.2rem, 5vw);
-  }
-
-  .text-container-generic p {
-    font-size: max(1rem, 3vw);
-  }
-
-  .text-container-generic button {
-    font-size: 1rem;
-    width: max(20vw, 120px);
-    height: max(6vh, 50px);
-
-    margin: 12px 0px;
-  }
-
-  /* Image container */
-  .image-container-generic, .image-container-generic img{
-    display: flex;
-    flex: 1;
-
-    object-fit: cover;
-    min-width: 30vw;
-    max-width: 40vw;
-    min-height: auto;
-    max-height: auto;
-  }
-
-  .image-container-generic img {
-    border: 4px solid var(--font-alternative-color);
-    border-radius: 24px;
-  }
-
-
-
-  /* HERO CONTAINER HC  HC  HC  HC  HC  HC  HC  HC  HC  HC  HC  HC   */
-  .content-container-hero {
-    display: flex;
-    flex-direction: column;
-
-    background-color: var(--accent-color);
-
-    border: 2px solid var(--background-color-darker);
-    border-radius: 12px;
-    padding: 12px 12px;
-    margin: 25px max(0.5vw, 10vw);
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-  .hero-header-h2 {
-    font-size: max(1.2rem, 4vw);
-    color: var(--font-alternative-color);
+.noto-serif-jp-bold {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  }
+.noto-serif-jp-extrabold {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 
-  .hero-body-p {
-    font-size: max(1rem, 2vw);
-    color: var(--background-color);
-  }
+.noto-serif-jp-light {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.noto-serif-jp-italic {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 
-  /* FOOTER F F F F F F F F F F F F F F F F F F F F F F F F F F F F F*/
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    background-color: var(--background-color-darker);
 
-    height: 10vh;
-  }
+/* CSS RESET AND NORMALIZATION   CSS CSS CSS CSS CSS CSS CSS CSS CSS  */
+/* Remove padding */
+body, ul, p, a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .footer-p {
-    text-align: center;
-    font-size: max(0.5rem, 1.5vh);
+/* Remove hyperlink text decoration */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  }
+/* Remove bullets from list items */
+ul {
+  list-style-type: none;
+}
+
+
+
+
+
+/* THEME TH TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH   */
+
+:root {
+  /* Colors */
+  --background-color: #F2E9E4;
+  --background-color-darker: #E7D6CD;
+  --accent-color: #4A4E69;
+  --accent-highlight-color: #9A8C98;
+  --valid-color: #9A8C98;
+  --font-default-color: #22223B;
+  --font-alternative-color: #C9ADA7;
+}
+
+body {
+  /* Font and color declarations */
+  background-color: var(--background-color, darkgrey);
+}
+
+h1, h2, h3, h4, h5, a, p, input {
+  /* Font and color declarations */
+  font-family: "Noto Serif JP", serif;
+  color: var(--font-default-color, white);
+
+  /* CBPM */
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  /* Font and color declarations */
+}
+
+a {
+  /* Font and color declarations */
+  color: var(--font-alternative-color, white);
+}
+
+button {
+  /* Font and color declarations */
+  font-family: "Noto Serif JP", serif;
+}
+
+
+
+
+
+/* HEADER H   H   H   H   H   H   H   H   H   H   H   H   H   H   H*/
+.header-title {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* CBPM */
+  padding: 4px 12px;
+}
+
+.nav-links {
+  /* CBPM */
+  padding: 4px 12px;
+}
+
+h1 {
+  /* Font and color declarations */
+  font-size: 3rem;
+
+  /* CBPM */
+  border-bottom: 2px solid var(--accent-highlight-color);
+}
+
+
+
+/* CONTENT CONTAINER CC   CC  CC  CC  CC  CC  CC  CC  CC  CC  CC   */
+.content {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container-generic {
+  /* Display declarations */
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+
+  /* CBPM */
+  padding: 12px 0px;
+  margin: 0px max(0.5vw, 10vw);
+}
+
+/* Text container ---------------------------*/ 
+.text-container-generic {
+
+}
+
+.text-container-generic h1 {
+  /* Font and color declarations */
+  font-size: max(2rem, 10vw);
+  text-shadow: 2px 2px 2px black;
+}
+
+.text-container-generic h2 {
+  /* Font and color declarations */
+  font-size: max(1.2rem, 5vw);
+}
+
+.text-container-generic p {
+  /* Font and color declarations */
+  font-size: max(1rem, 3vw);
+}
+
+.text-container-generic button {
+  /* Font and color declarations */
+  font-size: 1rem;
+
+  /* Transforms and constraints */
+  width: max(20vw, 120px);
+  height: max(6vh, 50px);
+
+  /* CBPM */
+  margin: 12px 0px;
+}
+
+/* Image container --------------------------*/
+.image-container-generic, .image-container-generic img{
+  /* Display declarations */
+  display: flex;
+  flex: 1;
+
+  /* Transforms and constraints */
+  object-fit: cover;
+  min-width: 30vw;
+  max-width: 40vw;
+  min-height: auto;
+  max-height: auto;
+}
+
+.image-container-generic img {
+  /* CBPM */
+  border: 4px solid var(--font-alternative-color);
+  border-radius: 24px;
+}
+
+
+
+/* HERO CONTAINER HC  HC  HC  HC  HC  HC  HC  HC  HC  HC  HC  HC  HC */
+.content-container-hero {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+
+  /* Font and color declarations */
+  background-color: var(--accent-color);
+
+  /* CBPM */
+  border: 2px solid var(--background-color-darker);
+  border-radius: 12px;
+  padding: 12px 12px;
+  margin: 25px max(0.5vw, 10vw);
+}
+
+.hero-header-h2 {
+  /* Font and color declarations */
+  font-size: max(1.2rem, 4vw);
+  color: var(--font-alternative-color);
+
+}
+
+.hero-body-p {
+  /* Font and color declarations */
+  font-size: max(1rem, 2vw);
+  color: var(--background-color);
+}
+
+
+
+/* FOOTER F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F*/
+.footer {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Font and color declarations */
+  background-color: var(--background-color-darker);
+
+  /* Transforms and constraints */
+  height: 10vh;
+}
+
+.footer-p {
+  /* Font and color declarations */
+  text-align: center;
+  font-size: max(0.5rem, 1.5vh);
+
+}
 
 
 
@@ -234,11 +268,13 @@
 
 /* CONTENT CONTAINER  CC  CC  CC  CC  CC  CC  CC  CC  CC  CC  CC  CC */
 .content-container-generic h2 {
+  /* Font and color declarations */
   font-size: max(1.2rem, 3vw);
 
 }
 
 .content-container-generic p {
+  /* Font and color declarations */
   font-size: max(0.7rem, 1.4vw);
 
 }
@@ -247,28 +283,31 @@
 
 /* REVIEW CONTAINER RC  RC  RC  RC  RC  RC  RC  RC  RC  RC  RC  RC  R*/
 .review-container-generic {
+  /* Display declarations */
   display: flex;
   flex-direction: column;
 
+  /* CBPM */
   padding: 12px 12px;
   margin: 25px max(0.5vw, 10vw);
 }
 
 .review-container-generic h2 {
+  /* Font and color declarations */
   font-size: max(1.2rem, 2.5vw);
-
   text-align: center;
 
 }
 
 .review-container-generic p {
+  /* Font and color declarations */
   font-size: max(0.8rem, 1.3vw);
-
   text-align: center;
 
 }
 
 .review-card-container {
+  /* Display declarations */
   display: grid;
   grid-template-columns: repeat(4,max(150px,25vw));
   grid-template-rows: 150px;
@@ -276,20 +315,29 @@
   overflow-x: auto;
   overflow-y: hidden;
 
+  /* Transforms and constraints */
   height: 210px;
 
+  /* CBPM */
   padding: 12px 50px;
 }
 
+
+/* NOTE FOR REVIEWERS: I definitely could have done this more 
+efficiently with more effective template creation, but I was lazy. 
+Feel free to deduct "points," but I'm at least aware. lol */
 .review-card-1,
 .review-card-2,
 .review-card-3,
 .review-card-4 {
+  /* Display declarations */
   display: flex;
   flex-direction: column;
 
+  /* Transforms and constraints */
   height: 200px;
 
+  /* CBPM */
   border: 2px solid var(--font-default-color);
   border-radius: 12px;
   padding: 6px 12px;
@@ -300,8 +348,67 @@
 }
 
 .review-card-container h4 {
+  /* Font and color declarations */
   font-size: max(0.8rem, 1.3vw);
   text-align: end;
 
+  /* CBPM */
   padding: 6px 12px;
+}
+
+
+
+
+
+/* MENU PAGE    MENU PAGE   MENU PAGE   MENU PAGE   MENU PAGE   MENU */
+.content-container-menu {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+
+  /* CBPM */
+  padding: 12px 12px;
+  margin: 25px max(0.5vw, 10vw);
+
+}
+
+.content-container-menu h2 {
+  /* Font and color declarations */
+  font-size: max(1.2rem, 3vw);
+  text-align: center;
+
+  /* CBPM */
+  border-bottom: 2px solid var(--accent-color);
+
+}
+
+.menu-card-container {
+  /* Display declarations */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* CBPM */
+  margin-top: 12px;
+}
+
+.menu-card-item-1, .menu-card-item-2, .menu-card-item-3 {
+  /* Display declarations */
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card-item-1 img, .menu-card-item-2 img, .menu-card-item-3 img {
+  /* Display declarations */
+  object-fit: cover;
+  align-self: center;
+ 
+  /* Transforms and constraints */
+  max-width: 200px;
+
+  /* CBPM */
+  border: 4px solid var(--background-color-darker);
+  border-radius: 12px;
 }

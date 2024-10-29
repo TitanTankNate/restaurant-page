@@ -15,7 +15,7 @@ import "./styles.css";
 
 // METHODS ------------------------------------------------------------
 // FUNCTION:    clearDOM()
-// DESCRIPTION: <>
+// DESCRIPTION: This function wipes all elements in the content div. 
 function clearDOM() {
     const contentToDelete = document.querySelector("#content");
     while (contentToDelete.firstChild) {
@@ -49,5 +49,5 @@ document.body.addEventListener("click", (event) => {
     };
 });
 
-
-createAboutPage();
+// Default page load behavior
+createHomePage();
