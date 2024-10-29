@@ -50,4 +50,4 @@ document.body.addEventListener("click", (event) => {
 });
 
 
-createHomePage();
+createAboutPage();
